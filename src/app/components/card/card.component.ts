@@ -8,6 +8,7 @@ import { Heroe } from 'src/app/models/heroe.model';
 })
 export class CardComponent implements OnInit {
   @Input() heroe: Heroe;
+  @Input() index: number;
   constructor() { }
 
   ngOnInit(): void {

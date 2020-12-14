@@ -15,4 +15,8 @@ export class HeroeService {
   obtenerHeroes( ): Heroe[] {
     return this.heroes;
   }
+
+  obtenerHeore(index: number): Heroe {
+    return this.heroes[index];
+  }
 }

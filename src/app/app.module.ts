@@ -8,6 +8,7 @@ import { GaleriaComponent } from './pages/galeria/galeria.component';
 import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from './app.routing';
 import { CardComponent } from './components/card/card.component';
+import { DetalleComponent } from './pages/detalle/detalle.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CardComponent } from './components/card/card.component';
     NavbarComponent,
     HomeComponent,
     GaleriaComponent,
-    CardComponent
+    CardComponent,
+    DetalleComponent
   ],
   imports: [
     BrowserModule,
