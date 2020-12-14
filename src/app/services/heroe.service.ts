@@ -21,6 +21,7 @@ export class HeroeService {
   }
 
   buscarHeroes(termino: string) {
-    return this.heroes.filter( heroe => heroe.nombre.toUpperCase().includes(termino.toUpperCase()) );
+    return this.heroes.map( (heroe, index) => ({...heroe, id: index}))
+    .filter( heroe => heroe.nombre.toUpperCase().includes(termino.toUpperCase()) );
   } 
 }

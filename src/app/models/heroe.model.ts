@@ -6,5 +6,6 @@ export interface Heroe {
     img: string;
     aparicion: string;
     casa: string;
+    id?: number;
 }
 
