@@ -7,13 +7,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { GaleriaComponent } from './pages/galeria/galeria.component';
 import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from './app.routing';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    GaleriaComponent
+    GaleriaComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

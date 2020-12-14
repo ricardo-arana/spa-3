@@ -11,10 +11,10 @@ export class GaleriaComponent implements OnInit {
   heroes: Heroe[] = [];
   constructor(private heoreService: HeroeService) { 
     this.heroes = this.heoreService.obtenerHeroes();
-    console.log(this.heroes);
   }
 
   ngOnInit(): void {
   }
+  
 
 }
