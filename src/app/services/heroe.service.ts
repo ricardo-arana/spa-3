@@ -19,4 +19,8 @@ export class HeroeService {
   obtenerHeore(index: number): Heroe {
     return this.heroes[index];
   }
+
+  buscarHeroes(termino: string) {
+    return this.heroes.filter( heroe => heroe.nombre.toUpperCase().includes(termino.toUpperCase()) );
+  } 
 }

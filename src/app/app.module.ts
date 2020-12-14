@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from './app.routing';
 import { CardComponent } from './components/card/card.component';
 import { DetalleComponent } from './pages/detalle/detalle.component';
+import { ResultadoComponent } from './pages/resultado/resultado.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DetalleComponent } from './pages/detalle/detalle.component';
     HomeComponent,
     GaleriaComponent,
     CardComponent,
-    DetalleComponent
+    DetalleComponent,
+    ResultadoComponent
   ],
   imports: [
     BrowserModule,
