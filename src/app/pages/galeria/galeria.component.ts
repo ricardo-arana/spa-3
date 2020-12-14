@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Heroe } from 'src/app/models/heroe.model';
+import { HeroeService } from 'src/app/services/heroe.service';
 
 @Component({
   selector: 'app-galeria',
@@ -6,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./galeria.component.css']
 })
 export class GaleriaComponent implements OnInit {
-
-  constructor() { }
+  heroes: Heroe[] = [];
+  constructor(private heoreService: HeroeService) { 
+    this.heroes = this.heoreService.obtenerHeroes();
+    console.log(this.heroes);
+  }
 
   ngOnInit(): void {
   }
